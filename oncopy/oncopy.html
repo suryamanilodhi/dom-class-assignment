@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oncopy</title>
+    <style>
+        .first_div{
+            border:2px solid black; 
+            height: 500px;
+            width: 500px;
+            position:relative;
+        } 
+        .shadow-drop-2-center{
+            background-color: greenyellow;
+            padding: 20px;
+            margin: 20px;
+            position: absolute; 
+            bottom: 20px;
+            right: 20px; 
+            display: none; 
+            
+        } 
+        .shadow-drop-2-center{-webkit-animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both}
+        @-webkit-keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}@keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+   
+    </style>
+</head>
+<body>
+    <div class="first_div" id="div1" oncopy="fun1();">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illum
+         praesentium nisi cupiditate consectetur eaque corrupti odio exercitationem
+          dolorum dolore laboriosam earum, atque ipsum voluptate laborum iusto sunt 
+          eveniet asperiores quo, minima commodi! Doloremque tenetur quibusdam autem 
+          minima! Voluptas sint magnam temporibus! Architecto non accusamus dignissimos
+           nihil doloremque modi exercitationem dolorem quia, eaque molestias iste vel neque a
+           b maiores fugit recusandae repellat nesciunt voluptas! Laborum molestias, dolores
+            obcaecati, quae minima, officia quaerat quod totam laboriosam saepe commodi illum. 
+            Ab ipsam vel perferendis in maiores corporis repellendus nostrum earum eveniet itaque
+              non praesentium fuga pariatur eos ut, minima illum similique veniam. 
+
+
+
+
+              <button  class="shadow-drop-2-center" oncopy="fun1();" id="btn">copy paste</button>
+              <Script src="oncopy.js"></Script>
+    </div>
+</body>
+</html>
